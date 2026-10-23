@@ -1,0 +1,355 @@
+
+:root {
+    --div-red: #e62936;
+    --div-dark: #202431;
+    --div-muted: #697184;
+    --div-bg: #f7f8fc;
+    --div-border: #e9eaf0;
+}
+
+.division-page {
+    color: var(--div-dark);
+    background: var(--div-bg);
+    min-height: 100vh;
+}
+
+.division-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 76px 6%;
+    color: white;
+    background: linear-gradient(120deg, #78131b, #df2835 66%, #ff6b70);
+}
+
+.division-hero::after {
+    content: "";
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    right: -100px;
+    top: -140px;
+    border: 1px solid #ffffff50;
+    border-radius: 50%;
+    box-shadow: 0 0 0 40px #ffffff10, 0 0 0 85px #ffffff09;
+}
+
+.division-hero-inner,
+.division-container {
+    width: min(1120px, 100%);
+    margin: auto;
+}
+
+.division-eyebrow {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #ffe0e2;
+}
+
+.division-hero h1 {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 18px 0;
+    font-size: clamp(36px, 6vw, 64px);
+    line-height: 1.08;
+    color: #fff;
+}
+
+.division-hero p {
+    position: relative;
+    z-index: 1;
+    max-width: 720px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.85;
+}
+
+.division-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.division-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    padding: 13px 20px;
+    border-radius: 9px;
+    background: #fff;
+    color: #b91e29;
+    font-weight: 800;
+    font-size: 14px;
+    text-decoration: none;
+    transition: transform .2s, background .2s;
+}
+
+.division-btn:hover {
+    transform: translateY(-2px);
+    background: #fff0f1;
+}
+
+.division-btn-outline {
+    border: 1px solid #ffffffa0;
+    background: transparent;
+    color: white;
+}
+
+.division-btn-outline:hover {
+    background: #ffffff18;
+    color: white;
+}
+
+.division-container {
+    padding: 52px 22px 70px;
+}
+
+.division-heading {
+    margin-bottom: 25px;
+}
+
+.division-heading small {
+    color: var(--div-red);
+    font-size: 11px;
+    font-weight: 850;
+    letter-spacing: 1.8px;
+}
+
+.division-heading h2 {
+    margin: 10px 0;
+    font-size: clamp(26px, 4vw, 38px);
+    line-height: 1.2;
+}
+
+.division-heading h2 span {
+    color: var(--div-red);
+}
+
+.division-heading p,
+.division-copy p {
+    color: var(--div-muted);
+    line-height: 1.85;
+    font-size: 15px;
+}
+
+.division-intro {
+    display: grid;
+    grid-template-columns: 1.15fr .85fr;
+    gap: 25px;
+    align-items: stretch;
+    margin-bottom: 52px;
+}
+
+.division-copy,
+.division-highlight {
+    padding: 28px;
+    border: 1px solid var(--div-border);
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0 12px 35px #20243108;
+}
+
+.division-copy h2,
+.division-highlight h3 {
+    margin-top: 0;
+    font-size: 23px;
+}
+
+.division-highlight {
+    background: linear-gradient(145deg, #fff, #fff0f1);
+    border-color: #f5d9dc;
+}
+
+.division-highlight ul {
+    padding-left: 20px;
+    color: var(--div-muted);
+    line-height: 2;
+}
+
+.division-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin: 24px 0 52px;
+}
+
+.division-card {
+    padding: 25px;
+    border: 1px solid var(--div-border);
+    border-radius: 16px;
+    background: white;
+    box-shadow: 0 10px 28px #20243107;
+}
+
+.division-card:nth-child(3n + 1) {
+    border-top: 4px solid #e62936;
+}
+
+.division-card:nth-child(3n + 2) {
+    border-top: 4px solid #7456d8;
+}
+
+.division-card:nth-child(3n) {
+    border-top: 4px solid #1c9b82;
+}
+
+.division-card .division-card-icon {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 13px;
+    background: #fff0f1;
+    color: var(--div-red);
+    font-size: 23px;
+}
+
+.division-card h3 {
+    margin: 17px 0 8px;
+    font-size: 18px;
+}
+
+.division-card p {
+    margin-bottom: 0;
+    color: var(--div-muted);
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.division-product-note {
+    padding: 28px;
+    border: 1px solid #f2dadd;
+    border-radius: 18px;
+    background: #fff2f3;
+    margin-bottom: 48px;
+}
+
+.division-product-note h2 {
+    margin-top: 0;
+}
+
+.division-product-note p {
+    color: #626879;
+    line-height: 1.8;
+}
+
+.division-related {
+    margin-top: 50px;
+}
+
+.division-related-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.division-related a {
+    padding: 17px;
+    border: 1px solid var(--div-border);
+    border-radius: 12px;
+    background: white;
+    color: var(--div-dark);
+    font-weight: 750;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.division-related a:hover {
+    border-color: var(--div-red);
+    color: var(--div-red);
+    transform: translateY(-2px);
+}
+
+.division-disclaimer {
+    margin-top: 35px;
+    padding: 18px;
+    border-left: 4px solid #e8a33b;
+    background: #fff9ed;
+    color: #6d604b;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.division-contact {
+    padding: 35px;
+    border-radius: 20px;
+    background: #252630;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.division-contact h2 {
+    color: white;
+    margin: 0 0 10px;
+}
+
+.division-contact p {
+    color: #d5d5df;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.division-contact .division-btn {
+    background: var(--div-red);
+    color: white;
+    white-space: nowrap;
+}
+
+.division-contact .division-btn:hover {
+    background: #c21f2b;
+}
+
+@media (max-width: 850px) {
+    .division-intro {
+        grid-template-columns: 1fr;
+    }
+
+    .division-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .division-related-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 540px) {
+    .division-hero {
+        padding: 52px 20px;
+    }
+
+    .division-container {
+        padding: 35px 14px 45px;
+    }
+
+    .division-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .division-related-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .division-copy,
+    .division-highlight,
+    .division-product-note {
+        padding: 21px;
+    }
+
+    .division-contact {
+        padding: 24px;
+    }
+
+    .division-actions .division-btn {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
